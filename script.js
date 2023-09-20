@@ -44,6 +44,7 @@ const resetValues = {
 const audioInicio = new Audio("/sons/play.wav");
 const audioPausa = new Audio("/sons/pause.mp3");
 const audioFim = new Audio("/sons/end.mp3");
+const audioReset = new Audio("/sons/reset.mp3");
 
 function tocarMusicaAleatoria() {
   const musicaAleatoria = musicas[Math.floor(Math.random() * musicas.length)];
@@ -173,6 +174,8 @@ resetTimerBt.addEventListener("click", () => {
     default:
       break;
   }
+  audioReset.play();
+  audioFim.volume = 0.1;
   mostrarTempo();
   musica.pause();
   musicaFocoInput.checked = false;
