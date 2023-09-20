@@ -196,6 +196,8 @@ function iniciarOuPausar() {
   if (intervaloId) {
     audioPausa.play();
     audioPausa.volume = 0.2;
+    musica.pause();
+    musicaFocoInput.checked = false;
     zerar();
     return;
   }
