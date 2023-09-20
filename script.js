@@ -110,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "https://lottie.host/5135ea59-8dfe-49e8-af51-01d0767c6c8c/n1fwVur4On.json",
     "foco"
   );
+  focoBt.classList.add("active");
 });
 
 focoBt.addEventListener("click", () => {
